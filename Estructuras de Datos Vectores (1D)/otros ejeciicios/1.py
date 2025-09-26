@@ -35,7 +35,6 @@ def multiplico(n1,n2,n3):
 def main():
     while True:
         opcion_recibida=menu()
-        print(opcion_recibida)
         if opcion_recibida==1:
          n1,n2,n3=cargar_numeros()
          sumando=suma(n1,n2,n3)
