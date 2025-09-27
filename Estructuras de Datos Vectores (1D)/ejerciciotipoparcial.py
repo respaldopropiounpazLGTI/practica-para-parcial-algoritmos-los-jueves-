@@ -53,9 +53,10 @@ def mi_menu():
         print("3 para hacer multiplicacion")
         print("4 para hacer division")
         print("5 para cargar arreglo ")
-        print("6 para salir ")
+        print("6 para cargar lista")
+        print("7 para salir ")
         opcion=int(input("que desea hacer ingrese opcion menu "))
-        if opcion==6:
+        if opcion==7:
             print("gracias por utilizar el programa ")
             break
         return opcion
@@ -93,6 +94,12 @@ def mi_main():
         for i in range(len(mi_arreglo)):
             mi_arreglo[i]=int(input(f"ingrese numero {i+1}"))
         print(f"el arreglo cargado es : {mi_arreglo}")
+    elif opcion_recibida==6:
+        mi_lista=[]
+        for i in range(4):
+            carga =int(input(f"ingese valor {i+1} :"))
+            mi_lista.append(carga)
+    print(mi_lista)        
         
 
 
